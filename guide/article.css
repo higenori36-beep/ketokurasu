@@ -1,10 +1,39 @@
+@import url("../assets/site.css");
 
-:root{--ink:#243a2e;--deep:#193127;--pale:#e7eee6;--bg:#faf8f2;--white:#fff;--line:#c9d3c7;--soft:#495c50;--warm:#f4e3bb}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 system-ui,"Yu Gothic",Meiryo,sans-serif}a{color:inherit;text-underline-offset:.24em}button,input{font:inherit;color:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #9d4e20;outline-offset:4px}img{display:block;width:100%;object-fit:cover}.wrap{width:min(1160px,calc(100% - 56px));margin:auto}.skip{position:absolute;left:12px;top:-100px;background:white;padding:8px;z-index:5}.skip:focus{top:8px}.sitehead{border-bottom:1px solid var(--line)}.headinner{min-height:79px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-weight:800;font-size:1.65rem;text-decoration:none;letter-spacing:.08em}.headinner nav{display:flex;gap:24px;font-size:.89rem;font-weight:650;flex-wrap:wrap}.headinner nav a{text-decoration:none}.notice{font-size:.78rem;margin:12px auto;color:var(--soft)}
-.hero{display:grid;grid-template-columns:.94fr 1.06fr;overflow:hidden;border-radius:7px 52px 7px 7px;background:var(--deep);color:#fff}.herotext{padding:clamp(25px,5vw,68px);align-self:center}.herotext small{color:#d1dfd0;font-weight:740}.hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;line-height:1.22;font-size:clamp(2.25rem,5.7vw,4.75rem);letter-spacing:.04em;margin:11px 0 20px}.hero p{margin:0 0 25px;color:#e0e9df}.hero figure{margin:0;position:relative;min-height:340px}.hero img{height:100%;position:absolute;inset:0;object-position:60% center}.hero figcaption{position:absolute;bottom:12px;right:12px;background:#243a2e;color:white;font-size:.72rem;padding:2px 8px}.cta{display:inline-flex;align-items:center;min-height:44px;border:1px solid transparent;padding:8px 17px;border-radius:5px;background:var(--warm);color:var(--deep);font-weight:750;text-decoration:none}.section{margin:52px 0}.section h2{font-size:clamp(1.4rem,3vw,2.05rem);line-height:1.3;margin:0 0 10px;letter-spacing:.025em}.sectionintro{color:var(--soft);margin:0 0 18px}
-.places,.articles,.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.place{background:var(--pale);padding:15px 18px;min-height:80px;display:flex;align-items:center;justify-content:space-between;border-radius:5px;text-decoration:none;font-weight:750}.place span{font-size:.83rem;color:var(--soft);font-weight:500}
-.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin:15px 0}.search{flex:1 1 235px}.search label{display:block;font-size:.86rem;font-weight:750}.search input{width:100%;min-height:44px;background:white;border-radius:5px;border:1px solid #7d9082;padding:8px 12px}.tabs{display:flex;gap:6px;flex-wrap:wrap}.pill,.comparebtn{border:1px solid #7d9082;background:var(--bg);border-radius:5px;padding:6px 12px;min-height:44px;font-size:.89rem}.pill[aria-pressed=true],.comparebtn[aria-pressed=true]{background:var(--deep);color:white}.status{min-height:1.6em;color:var(--soft);font-size:.88rem}.tile{padding:18px;background:white;border:1px solid var(--line);border-radius:6px}.tile h3{line-height:1.35;font-size:1.13rem;margin:7px 0}.tile p{margin:8px 0}.tile small{color:var(--soft)}.tile a{display:inline-block;margin-top:8px}.tile .comparebtn{margin-top:10px;display:block}.product-actions{margin-top:auto}.products .tile{display:flex;flex-direction:column}.tablewrap{overflow-x:auto}.data{border-collapse:collapse;width:100%;margin:12px 0;background:white}.data th,.data td{padding:9px 12px;text-align:left;border:1px solid var(--line);vertical-align:top;min-width:122px}.data th{background:var(--pale)}.ranking{padding:22px 26px;background:var(--pale);border-radius:5px}.ranking li{margin:7px 0}.articles details{margin:10px 0 0}.articles summary{font-weight:750;cursor:pointer}.articles details h4{margin:12px 0 0}.articles details p{font-size:.92rem}.sitefoot{background:var(--deep);color:white;padding:30px 0}.sitefoot p{margin:8px 0}.sitefoot nav{display:flex;flex-wrap:wrap;gap:14px}.sitefoot details{padding:12px 0;border-bottom:1px solid #63796d}.sitefoot summary{cursor:pointer;font-weight:750}.sitefoot details p{max-width:730px}.muted{color:var(--soft)}[hidden]{display:none!important}
-@media(max-width:730px){.wrap{width:calc(100% - 28px)}.headinner{min-height:70px;gap:9px}.brand{font-size:1.36rem}.headinner nav{gap:9px;font-size:.75rem}.hero{grid-template-columns:1fr;border-radius:6px 32px 6px 6px}.hero figure{min-height:220px;aspect-ratio:1.65}.hero h1{margin:9px 0 13px}.hero p{margin-bottom:16px}.section{margin:34px 0}.places{gap:6px}.place{display:block;min-height:61px;padding:8px;font-size:.93rem}.place span{display:block;font-size:.73rem}.articles,.products{grid-template-columns:1fr}.tile{padding:15px}}
-
-.guide{max-width:780px;padding-bottom:3rem}.guide header{padding:30px 0 20px;border-bottom:1px solid var(--line)}.guide h1{font:700 clamp(1.65rem,5vw,3rem)/1.35 "Yu Mincho",serif;margin:.3em 0}.guide h2{font-size:1.35rem;margin:1.6em 0 .45em}.guide p{margin:.6em 0}.guide .intro{font-size:1.08rem;color:#394f41}.guide nav{margin:20px 0}.guide .refs{margin-top:1.7rem;padding:3px 20px 15px;background:var(--pale);border-radius:6px}.guide ul{padding-left:1.3em}.guide li{margin:.4em 0}.articles .tile{display:flex;flex-direction:column}.articles .tile a{margin-top:auto}
-.guide .shop{margin-top:1.7rem;padding:3px 20px 15px;background:#fdf6ec;border:1px solid #e5cf9f;border-radius:6px}.guide .shop .adnote{font-size:.82rem;color:#6b5a33}
+.guide {
+  max-width: 780px;
+  padding-bottom: 42px;
+  overflow-wrap: anywhere;
+}
+.guide > nav, .guide article { margin-block: 20px; }
+.guide [aria-label="パンくず"] { font-size: .9rem; }
+.guide article {
+  padding: clamp(16px, 5vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+}
+.guide article > header {
+  margin: calc(-1 * clamp(16px, 5vw, 42px));
+  margin-bottom: 26px;
+  padding: clamp(16px, 5vw, 42px);
+  border-radius: 17px 17px 0 0;
+  background: linear-gradient(125deg, #f2fbff 0%, var(--sky) 88%);
+}
+.guide header small { color: var(--accent); font-weight: 750; }
+.guide h1 { margin: .3em 0 .45em; font: 800 clamp(1.6rem, 4.5vw, 2.75rem)/1.38 var(--serif); }
+.guide h2 { margin: 1.6em 0 .5em; font-size: clamp(1.16rem, 3vw, 1.45rem); line-height: 1.5; }
+.guide p { margin: .7em 0; }
+.guide .intro { font-size: 1.06rem; }
+.guide header .muted, .guide .adnote { font-size: .88rem; }
+.guide ul, .guide ol { padding-left: 1.45em; }
+.guide li { margin: .45em 0; }
+.guide .refs, .guide .shop {
+  margin-top: 24px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: linear-gradient(125deg, #f2fbff 0%, var(--sky) 88%);
+}
+.guide .shop { background: var(--mist); }
+.guide .refs h2, .guide .shop h2 { margin-top: 0; }
+.guide .shop a { font-weight: 750; }
